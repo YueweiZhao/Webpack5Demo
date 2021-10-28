@@ -1,4 +1,4 @@
-# WebpackDem 
+# WebpackDemo
 
 1. a simple webpack demo to test the configs of webpack5
 - webpack.config.js: the common configs of webpack5;
