@@ -1,0 +1,23 @@
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode
+.idea
+.log
+logs
+
+# dependencies
+node_modules
+**/node_modules/
+
+dist
+custom/dist
+.DS_Store
+.history/
+.yarnrc
+.yarn
+
+# log
+*.log
+*.log.*

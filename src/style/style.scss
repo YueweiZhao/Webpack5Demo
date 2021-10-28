@@ -1,0 +1,9 @@
+$color-white: #fff;
+$color-black: #222;
+
+body{
+  background: $color-black;
+  div {
+    color: $color-white;
+  }
+}

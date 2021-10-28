@@ -1,0 +1,31 @@
+body{
+  background: #222;
+  color: #fff;
+  display: flex;
+}
+.a{
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  position: relative;
+  background: white;
+}
+.a::after {
+  position: absolute;
+  left: 4px;
+  right: -4px;
+  top: 4px;
+  bottom: -4px;
+  content: "";
+  border: 1px solid red;
+  z-index: -1;
+}
+
+.b {
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  position: relative;
+  background: white;
+  box-shadow: 5px 5px 0 #222, 5px 5px 0 1px white;
+}
