@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
-const BundleSizeCalculatorPlugin = require('./custom/plugins/BundleSizeCalculatorPlugin');
+const BundleSizeCalculatorPlugin = require('./lib/plugins/BundleSizeCalculatorPlugin');
 
 module.exports = {
 
@@ -21,7 +21,7 @@ module.exports = {
     // 打包时，在包中包含所属模块的信息的注释，在入口文件下层目录生成.map文件
     pathinfo: true,
     // 输出文件的路径
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, 'custom-dist/'),
     // 输出的文件名，[name]代表输入文件名
     filename: 'assets/[name]-[chunkhash:6].js',
     // 静态bundle文件名称
@@ -30,20 +30,20 @@ module.exports = {
 
   // 配置webpack会在多个目录中查找可用loader
   resolveLoader: {
-    modules: ['node_modules', './custom/myLoaders']
+    modules: ['node_modules', './lib/myLoaders']
   },
 
   // module，入口文件只能是js和json，其他类型文件需要loader解析
   module: {
     rules: [
-      // scss打包工具
+      // less打包工具
       {
-        test: /\.(sass|scss)$/,
+        test: /\.(less)$/,
         // use会按照从前向后的顺序执行loader
         use: [
           'ou-style-loader',
           'ou-css-loader',
-          'ou-sass-loader',
+          'ou-less-loader',
         ],
       },
 

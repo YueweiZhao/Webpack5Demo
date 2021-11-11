@@ -4,9 +4,9 @@
 - webpack.config.js: the common configs of webpack5;
 - use "yarn run dev" to run webpack;
 
-2. a diy loader to pack css and scss
+2. a diy loader to pack css and less
 - webpack.config.custom.js: the config to run diy loader;
-- ~/custom/myLoaders: the loaders to pack css or scss;
+- ~/custom/myLoaders: the loaders to pack css or less;
 - use "resolveLoader" in config to tell the webpack where to find my diy loader;
 - use "yarn run custom" to run loader;
 

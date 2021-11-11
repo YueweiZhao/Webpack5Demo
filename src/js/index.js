@@ -1,5 +1,5 @@
 import '../style/main.css';
-import '../style/style.scss';
+import '../style/style.less';
 import pic from '../static/annoy.gif';
 
 const consoleHello = () => {
