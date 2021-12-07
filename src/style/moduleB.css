@@ -1,0 +1,6 @@
+.moduleB {
+  width: 100px;
+  height: 100px;
+  background-image: url('../static/annoy.gif');
+  background-size: cover;
+}

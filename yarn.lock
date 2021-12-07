@@ -2804,6 +2804,13 @@ klona@^2.0.4:
   resolved "https://registry.npmmirror.com/klona/download/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha1-0WZXTZAHY5XZljqnqSj6u412r7w=
 
+less-loader@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.npmmirror.com/less-loader/download/less-loader-10.2.0.tgz?cache=0&sync_timestamp=1634563356714&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fless-loader%2Fdownload%2Fless-loader-10.2.0.tgz#97286d8797dc3dc05b1d16b0ecec5f968bdd4e32"
+  integrity sha1-lyhth5fcPcBbHRaw7OxflovdTjI=
+  dependencies:
+    klona "^2.0.4"
+
 less@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmmirror.com/less/download/less-4.1.2.tgz#6099ee584999750c2624b65f80145f8674e4b4b0"

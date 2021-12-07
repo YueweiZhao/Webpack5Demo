@@ -4,6 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 
+
 module.exports = {
 
   // 配置mode为开发环境
@@ -53,8 +54,8 @@ module.exports = {
           // 使用postcss-loader，实现添加浏览器前缀，压缩代码等功能(postcss配置文件)
           'postcss-loader',
 
-          // 打包scss文件
-          'sass-loader',
+          // 打包less文件
+          'less-loader',
         ],
       },
 

@@ -1,3 +1,6 @@
+@import './moduleA.css';
+@import './moduleB.css';
+
 body{
   background: #222;
   color: #fff;
